@@ -1,0 +1,18 @@
+ class Program
+    {
+        public static void Main()
+        {
+            Client client = new Client();
+            client.AddIndustrial(1, "Man", 7000, "Good", 2013, "Industrial", "Chevrolet");
+            client.AddIndustrial(2, "Canyon", 7000, "Good", 2010, "Industrial", "Chevrolet");
+            client.AddIndustrial(3, "Citaro", 7000, "Bad", 2012, "Industrial", "Mercedez");
+            client.AddPassenger(4, "Ford", 10000, "New", 2000, "Passenger", "Chevrolet");
+            client.AddPassenger(5, "Nexia 3", 7000, "Good", 2019, "Passenger", "Chevrolet");
+            client.AddPassenger(6, "Ford", 10000, "New", 2000, "Passenger", "Chevrolet");
+            client.AddPassenger(7, "Nexia 3", 7000, "Good", 2019, "Passenger", "Chevrolet");
+            client.AddPassenger(8, "Ford", 10000, "Bad", 2000, "Passenger", "Chevrolet");
+
+            Command cli = new Command(client);
+            cli.Start();
+        } 
+    }
